@@ -1,10 +1,5 @@
 NÍTIDA — DEMO CORREGIDA
 
-OPCIÓN RÁPIDA
-1. Abre NITIDA_PREVIA_PORTATIL.html.
-2. Esta versión incluye los estilos y el JavaScript dentro del mismo archivo.
-3. Funciona incluso si la abres directamente desde el ZIP.
-
 PROYECTO PARA EDITAR / SUBIR
 - Extrae toda la carpeta antes de abrir index.html.
 - index.html y catalogo.html necesitan styles.css y app.js junto a ellos.
