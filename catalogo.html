@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo Nítida: productos para cocina, baño, lavandería y todo el hogar." />
+  <title>Catálogo | Nítida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="catalog-page">
+  <div class="topbar">Despachos en Santiago · Envíos a todo Chile · Compra directa por WhatsApp</div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">N</span><span><strong>NÍTIDA</strong><small>limpieza que se siente</small></span></a>
+    <nav class="main-nav"><a href="index.html">Inicio</a><a class="active" href="catalogo.html">Catálogo</a><a href="index.html#promociones">Promociones</a><a href="index.html#nosotros">Nosotros</a></nav>
+    <div class="header-actions"><button class="cart-button" data-cart-open>🛒 <span data-cart-count>0</span></button></div>
+  </header>
+
+  <main>
+    <section class="catalog-hero">
+      <div><span class="eyebrow">CATÁLOGO NÍTIDA</span><h1>Todo lo que tu hogar necesita para volver a brillar.</h1><p>Filtra, compara y agrega tus favoritos. Nosotros coordinamos el resto contigo.</p></div>
+      <div class="catalog-hero-badge"><span>Más de</span><strong>20</strong><small>soluciones para tu hogar</small></div>
+    </section>
+
+    <section class="catalog-layout">
+      <aside class="catalog-sidebar">
+        <div class="sidebar-head"><h3>Categorías</h3><button data-reset-filters>Limpiar</button></div>
+        <div class="category-filters" data-category-filters>
+          <button class="active" data-category="todos">Todos <span>12</span></button>
+          <button data-category="cocina">Cocina <span>3</span></button>
+          <button data-category="bano">Baño <span>2</span></button>
+          <button data-category="lavanderia">Lavandería <span>3</span></button>
+          <button data-category="hogar">Todo el hogar <span>2</span></button>
+          <button data-category="packs">Packs <span>2</span></button>
+        </div>
+        <div class="sidebar-help"><span>💬</span><h4>¿Necesitas ayuda?</h4><p>Te recomendamos productos según tu necesidad.</p><a href="https://wa.me/56900000000" target="_blank" rel="noopener">Hablar por WhatsApp</a></div>
+      </aside>
+
+      <div class="catalog-content">
+        <div class="catalog-toolbar">
+          <label class="search-box">⌕<input type="search" data-search placeholder="Buscar producto..." /></label>
+          <label class="sort-box">Ordenar por<select data-sort><option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="name">Nombre</option></select></label>
+        </div>
+        <div class="catalog-summary"><p><strong data-result-count>12</strong> productos encontrados</p><div class="active-filter" data-active-filter>Todos los productos</div></div>
+        <div class="product-grid catalog-products" data-catalog-products></div>
+        <div class="no-results" data-no-results><span>🧽</span><h3>No encontramos coincidencias</h3><p>Prueba con otra palabra o categoría.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><div class="brand"><span class="brand-mark">N</span><span><strong>NÍTIDA</strong><small>limpieza que se siente</small></span></div><p>Soluciones de limpieza para hogares que quieren sentirse bien.</p></div>
+    <div><h4>Explorar</h4><a href="catalogo.html">Catálogo</a><a href="index.html#promociones">Promociones</a></div>
+    <div><h4>Ayuda</h4><a href="#">Despachos</a><a href="#">Contacto</a></div>
+    <div><h4>Síguenos</h4><a href="#">Instagram</a><a href="#">Facebook</a></div>
+    <div class="footer-bottom"><span>© 2026 Nítida.</span><span>Demo comercial editable.</span></div>
+  </footer>
+
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow">TU PEDIDO</span><h3>Carrito de compra</h3></div><button data-cart-close>×</button></div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty><span>🫧</span><p>Tu carrito está esperando su primera dosis de frescura.</p></div>
+    <div class="cart-footer">
+      <label>Nombre<input type="text" data-customer-name placeholder="¿Cómo te llamas?" /></label>
+      <label>Entrega<select data-delivery><option>Coordinar entrega</option><option>Retiro</option><option>Despacho a domicilio</option></select></label>
+      <div class="cart-total"><span>Total</span><strong data-cart-total>$0</strong></div>
+      <button class="btn btn-primary full" data-checkout>Enviar pedido por WhatsApp</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" data-cart-overlay></div>
+  <a class="floating-whatsapp" href="https://wa.me/56900000000" target="_blank" rel="noopener">💬</a>
+
+  <script src="app.js"></script>
+</body>
+</html>
